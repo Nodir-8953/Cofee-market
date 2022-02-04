@@ -8,17 +8,12 @@
     src: url("../../Fonts/Meriendabold.woff2") format("woff2"), url("../../Fonts/Merienda-Bold.ttf") format("truetype");
 }
 .navbar {
-    padding: 0;
     padding: 30px 150px;
     display: flex;
-    justify-content: start;
-    align-items: flex-start;
     ul {
-        // position: absolute;
-        // left: 12px;
         list-style: none;
         display: flex;
-        text-decoration: none;
+        padding: 0;
         li {
             font-family: "Merienda";
             font-size: 12px;

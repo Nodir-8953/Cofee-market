@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Merienda";
-    src: url("../../Fonts/Merienda.woff2") format("woff2"), url("../../Fonts/Merienda.woff") format("woff2"),
-        url("../../Fonts/Merienda.ttf") format("truetype");
+    src: url("../Fonts/Merienda.woff2") format("woff2"), url("../Fonts/Merienda.woff") format("woff2"),
+        url("../Fonts/Merienda.ttf") format("truetype");
 }
 @font-face {
     font-family: "Merienda-bold";
-    src: url("../../Fonts/Meriendabold.woff2") format("woff2"), url("../../Fonts/Merienda-Bold.ttf") format("truetype");
+    src: url("../Fonts/Meriendabold.woff2") format("woff2"), url("../Fonts/Merienda-Bold.ttf") format("truetype");
 }
 
 .head {
     padding: 0;
     height: 640px;
     margin: 0 auto;
-    background: url("../img/Bg.png");
+    background: url("../Main-page/img/Bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     .main {
         margin-top: 117px;
         text-align: center;
@@ -64,5 +64,53 @@
             color: #ffffff;
             cursor: pointer;
         }
+    }
+}
+.about {
+    height: 520px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        font-family: "Merienda";
+        font-size: 24px;
+        color: #000000;
+    }
+    .subtitle {
+        margin-top: 20px;
+        width: 200px;
+        img {
+            width: 100%;
+        }
+    }
+    .text {
+        width: 589px;
+        margin-top: 40px;
+        font-family: "Merienda";
+        font-size: 14px;
+        text-align: center;
+        color: #000000;
+    }
+}
+.product {
+    height: 495px;
+    background: url("../Main-page/img/products-bg.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        margin-top: 80px;
+        font-family: "Merienda";
+        font-size: 24px;
+        text-align: center;
+        color: #000000;
+    }
+    .wrapper {
+        margin-top: 39px;
+        display: flex;
+        width: 933px;
+        justify-content: space-around;
+        align-items: center;
     }
 }

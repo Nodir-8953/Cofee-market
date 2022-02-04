@@ -1,16 +1,10 @@
 import './App.scss';
-import Header from './Main-page/Header/Header'
-import About from './Main-page/About/About'
-import Products from './Main-page/Products/Products'
-import Footer from './Component/Footer/Footer'
+import MainPage from './Main-page/Main-page'
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <About />
-      <Products />
-      <Footer />
+      <MainPage />
     </div>
   );
 }
