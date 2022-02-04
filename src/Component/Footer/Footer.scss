@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Merienda";
+    src: url("../../Fonts/Merienda.woff2") format("woff2"), url("../../Fonts/Merienda.woff") format("woff2"),
+        url("../../Fonts/Merienda.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Merienda-bold";
+    src: url("../../Fonts/Meriendabold.woff2") format("woff2"), url("../../Fonts/Merienda-Bold.ttf") format("truetype");
+}
+.footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 20px 0;
+    .sub__logo{
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+}

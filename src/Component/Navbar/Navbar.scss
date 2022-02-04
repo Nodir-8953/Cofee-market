@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Merienda";
+    src: url("../../Fonts/Merienda.woff2") format("woff2"), url("../../Fonts/Merienda.woff") format("woff2"),
+        url("../../Fonts/Merienda.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Merienda-bold";
+    src: url("../../Fonts/Meriendabold.woff2") format("woff2"), url("../../Fonts/Merienda-Bold.ttf") format("truetype");
+}
+.navbar {
+    padding: 0;
+    padding: 30px 150px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    ul {
+        // position: absolute;
+        // left: 12px;
+        list-style: none;
+        display: flex;
+        text-decoration: none;
+        li {
+            font-family: "Merienda";
+            font-size: 12px;
+            margin-right: 40px;
+            a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+}
