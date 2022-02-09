@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Merienda";
+    src: url("../../Fonts/Merienda.woff2") format("woff2"), url("../../Fonts/Merienda.woff") format("woff2"),
+        url("../../Fonts/Merienda.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Merienda-bold";
+    src: url("../../Fonts/Meriendabold.woff2") format("woff2"), url("../../Fonts/Merienda-Bold.ttf") format("truetype");
+}
+.filter {
+    // min-height: 671px;
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .look {
+        label {
+            font-family: "Merienda";
+            font-size: 14px;
+            text-align: center;
+            color: #000000;
+            margin-right: 19px;
+        }
+        input {
+            width: 180px;
+            height: 30px;
+            background: #ffffff;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            font-family: "Merienda";
+            font-size: 12px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.5);
+            padding: 6px 36px;
+            border: none;
+        }
+    }
+    .filt {
+        label {
+            font-family: "Merienda";
+            font-size: 14px;
+            text-align: center;
+            color: #000000;
+            margin-right: 35px;
+        }
+        button {
+            background: #ffffff;
+            width: 75px;
+            height: 30px;
+            margin-right: 5px;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px 0px 0px 4px;
+            border: none;
+            font-family: 'Merienda';
+            font-size: 12px;
+            text-align: center;
+            color: #000000;
+            cursor: pointer;
+        }
+    }
+}
+.cardPage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 827px;
+    margin: 30px auto;
+}
+.item{
+    margin: 0 5px 10px 0;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+}

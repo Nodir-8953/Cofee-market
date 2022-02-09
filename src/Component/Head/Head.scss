@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Merienda-bold";
+    src: url("../../Fonts/Meriendabold.woff2") format("woff2"), 
+    url("../../Fonts/Merienda-Bold.ttf") format("truetype");
+}
+.cofeeHeader {
+    background-image: url("../../Images/CofeePageBg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 84px;
+    .title {
+        margin-top: 60px;
+        font-family: "Merienda-bold";
+        font-size: 40px;
+        color: #ffffff;
+    }
+}

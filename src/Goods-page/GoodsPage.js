@@ -1,25 +1,23 @@
 import React from "react";
 import Navbar from "../Component/Navbar/Navbar";
-import Filter from "../Component/Filter/Filter";
-import Head from "../Component/Head/Head";
+import Card from "../Component/Card/Card";
 import Footer from "../Component/Footer/Footer";
-
-
-import CofeePagePhoto from '../Images/CofeePagePhoto.png'
-import jpg from '../Images/jpg.png'
-import './Cofee-page.scss';
-
-
-function CofeePage({data, onUpdateSearch, term}) {
-    
-
+import jpg from '../Images/jpg.png';
+import Goods from '../Images/Goods.png';
+import './GoodsPage.scss';
+function GoodsPage({ data }) {
     return (
-        <>
-            <Head/>
+        <div>
+            <div className="cofeeHeader">
+                <Navbar />
+                <div className="title">
+                    For your pleasure
+                </div>
+            </div>
             <div className="cofeeAbout">
                 <div className="wrap">
                     <div className="image">
-                        <img src={CofeePagePhoto} />
+                        <img src={Goods} />
                     </div>
                     <div className="beats">
                         <div className="title">
@@ -44,11 +42,14 @@ function CofeePage({data, onUpdateSearch, term}) {
                 </div>
                 <div className="line"></div>
             </div>
-            <div className="filterPage">
-                <Filter data={data} onUpdateSearch={onUpdateSearch} term={term} />
+            <div className="item-wrapper">
+                {
+                    data.map(item => {
+                        return <Card item={item} />
+                    })
+                }
             </div>
-            <Footer/>
-
-        </>)
+            <Footer />
+        </div>)
 }
-export default CofeePage;
+export default GoodsPage;

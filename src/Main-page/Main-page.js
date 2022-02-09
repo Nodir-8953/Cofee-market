@@ -1,15 +1,15 @@
 import React from "react";
-import Logo from '../Main-page/img/Logo.svg';
-import emblem from '../Main-page/img/emblem.png';
-import Navbar from '../Component/Navbar/Navbar'
-import Card from '../Component/Card/Card'
-import Footer from '../Component/Footer/Footer'
-import './Main-page.scss'
+import emblem from '../Images/emblem.png';
+import Navbar from '../Component/Navbar/Navbar';
+import Card from '../Component/Card/Card';
+import Footer from '../Component/Footer/Footer';
+import './Main-page.scss';
 
-import jpg from '../Main-page/img/jpg.png'
+import jpg from '../Images/jpg.png';
 
 
-function MainPage() {
+function MainPage({data}) {
+    
     return (
         <>
             <div className='head'>
@@ -59,10 +59,14 @@ function MainPage() {
                     Our best
                 </div>
                 <div className="wrapper">
-                    <Card />
+                    {
+                        data.map(item => {
+                            return <Card item={item} />
+                        })
+                    }
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 

@@ -1,5 +1,5 @@
 import React from "react";
-import jpg from '../../Main-page/img/jpg.png';
+import jpg from '../../Images/jpg.png';
 import Navbar from '../Navbar/Navbar'
 import './Footer.scss';
 function Footer() {

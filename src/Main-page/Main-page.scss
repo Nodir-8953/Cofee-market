@@ -1,18 +1,20 @@
 @font-face {
     font-family: "Merienda";
-    src: url("../Fonts/Merienda.woff2") format("woff2"), url("../Fonts/Merienda.woff") format("woff2"),
+    src: url("../Fonts/Merienda.woff2") format("woff2"), 
+    url("../Fonts/Merienda.woff") format("woff2"),
         url("../Fonts/Merienda.ttf") format("truetype");
 }
 @font-face {
     font-family: "Merienda-bold";
-    src: url("../Fonts/Meriendabold.woff2") format("woff2"), url("../Fonts/Merienda-Bold.ttf") format("truetype");
+    src: url("../Fonts/Meriendabold.woff2") format("woff2"), 
+    url("../Fonts/Merienda-Bold.ttf") format("truetype");
 }
 
 .head {
     padding: 0;
     height: 640px;
     margin: 0 auto;
-    background: url("../Main-page/img/Bg.png");
+    background: url("../Images/Bg.png");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -94,8 +96,8 @@
     }
 }
 .product {
-    height: 495px;
-    background: url("../Main-page/img/products-bg.png");
+    min-height: 495px;
+    background: url("../Images/products-bg.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,8 +111,12 @@
     .wrapper {
         margin-top: 39px;
         display: flex;
+        flex-wrap: wrap;
         width: 933px;
         justify-content: space-around;
         align-items: center;
+        .item{
+            margin-bottom: 20px;
+        }
     }
 }

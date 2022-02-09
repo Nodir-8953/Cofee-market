@@ -8,13 +8,26 @@
     src: url("../Fonts/Merienda.woff2") format("woff2"), url("../Fonts/Merienda-Bold.ttf") format("truetype");
 }
 
+.cofeeHeader {
+    background-image: url("../Images/Goodsbg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 84px;
+    .title {
+        margin-top: 60px;
+        font-family: "Merienda-bold";
+        font-size: 40px;
+        color: #ffffff;
+    }
+}
 .cofeeAbout {
     height: 500px;
     width: 710px;
     display: flex;
     flex-direction: column;
     margin: 60px auto;
-    .wrap{        
+    .wrap {
         display: flex;
         .image {
             width: 355px;
@@ -25,7 +38,7 @@
         }
         .beats {
             width: 346px;
-            
+
             .title {
                 margin-top: 20px;
                 font-family: "Merienda";
@@ -47,14 +60,22 @@
                 color: #000000;
             }
         }
-    }    
+    }
     .line {
         width: 240px;
         border: 1px solid #000000;
         margin: 50px auto;
     }
 }
-.filterPage{
-    // background: #000;
-    min-height: 671px;
+.item-wrapper {
+    width: 993px;
+    margin: 60px auto;
+    // margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+        margin-right: 60px;
+        filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.25));
+        margin-bottom: 40px;
+    }
 }
