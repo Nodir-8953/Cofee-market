@@ -10,7 +10,7 @@ import jpg from '../Images/jpg.png'
 import './Cofee-page.scss';
 
 
-function CofeePage({data, onUpdateSearch, term}) {
+function CofeePage({data, onUpdateSearch, term, filter}) {
     
 
     return (
@@ -45,7 +45,7 @@ function CofeePage({data, onUpdateSearch, term}) {
                 <div className="line"></div>
             </div>
             <div className="filterPage">
-                <Filter data={data} onUpdateSearch={onUpdateSearch} term={term} />
+                <Filter data={data} onUpdateSearch={onUpdateSearch} term={term} filter={filter} />
             </div>
             <Footer/>
 

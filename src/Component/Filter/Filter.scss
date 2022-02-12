@@ -44,7 +44,7 @@
             color: #000000;
             margin-right: 35px;
         }
-        button {
+        .btn {
             background: #ffffff;
             width: 75px;
             height: 30px;
@@ -57,12 +57,17 @@
             text-align: center;
             color: #000000;
             cursor: pointer;
-        }
+            &.active{
+                background: rgb(143, 140, 140);
+                color: #ffffff; 
+            }
+        }      
+        
     }
 }
 .cardPage {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 827px;
     margin: 30px auto;

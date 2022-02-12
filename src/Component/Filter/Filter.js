@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Card from "../Card/Card";
 import './Filter.scss'
 
-function Filter ({ data, onUpdateSearch, term }) {
+function Filter({ data, onUpdateSearch, term, filter }) {
 
     // const onUpdateSearch = (e) => {
     //     const term = e.target.value;
@@ -10,8 +10,23 @@ function Filter ({ data, onUpdateSearch, term }) {
     //     // this.setState({ term });
     //     // this.props.onUpdateSearch(term)
     // }
+    
+    const buttonsData = [
+        { name: "Brazil", label: "Brazil" },
+        { name: "Keniya", label: "Keniya" },
+        { name: "Columbia", label: "Columbia" }
+    ]
+    const buttons = buttonsData.map(({ name, label }) => {
+        const active = filter === name;
+        const clazz = active ? "active" : "";
+        return (
+        <button className={`btn ${clazz}`}>
+            {label}
+        </button>)
+    })
+
     return (
-        
+
         <>
             <div className="filter">
                 <div className="look">
@@ -25,9 +40,7 @@ function Filter ({ data, onUpdateSearch, term }) {
                 </div>
                 <div className="filt">
                     <label>Or filter</label>
-                    <button>Brazil</button>
-                    <button>Kenya</button>
-                    <button>Columbia</button>
+                    {buttons}
                 </div>
 
             </div>
