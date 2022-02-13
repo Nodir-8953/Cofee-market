@@ -1,51 +1,54 @@
 @font-face {
-    font-family: "Merienda";
-    src: url("../../Fonts/Merienda.woff2") format("woff2"), url("../../Fonts/Merienda.woff") format("woff2"),
-        url("../../Fonts/Merienda.ttf") format("truetype");
+  font-family: "Merienda";
+  src: url("../../Fonts/Merienda.woff2") format("woff2"),
+    url("../../Fonts/Merienda.woff") format("woff2"),
+    url("../../Fonts/Merienda.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Merienda-bold";
-    src: url("../../Fonts/Meriendabold.woff2") format("woff2"), url("../../Fonts/Merienda-Bold.ttf") format("truetype");
+  font-family: "Merienda-bold";
+  src: url("../../Fonts/Meriendabold.woff2") format("woff2"),
+    url("../../Fonts/Merienda-Bold.ttf") format("truetype");
 }
 .item {
-    width: 220px;
-    min-height: 240px;
-    background: rgba(255, 255, 255, 0.65);
-    border-radius: 8px;
-    padding: 23px 25px;
-    display: flex;
-    flex-direction: column;
-    // vertical-align: baselsine;
-    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
-    .img {
-        width: 186px;
-        height: 109px;
-        margin: 0 auto;
-        img {
-            width: 100%;
-        }
+  width: 220px;
+  min-height: 240px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 8px;
+  padding: 23px 25px;
+  display: flex;
+  flex-direction: column;
+  // vertical-align: baselsine;
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+  .img {
+    width: 186px;
+    height: 109px;
+    margin: 0 auto;
+    img {
+      width: 100%;
     }
-    .describe  {
-        margin-top: 72px;
-        font-family: "Merienda";
-        font-size: 14px;
-        text-align: right;
-        color: #000000;
-    }
-    .country  {
-        margin-top: 6px;
-        font-family: "Merienda";
-        font-size: 14px;
-        text-align: right;
-        color: #000000;
-        // display: none;
-    }
-    .price {
-        margin-top: 6px;
-        font-family: 'Merienda-bold';
-        font-weight: bold;
-        font-size: 14px;
-        text-align: right;
-        color: #000000;
-    }
+  }
+  .describe {
+    margin-top: 72px;
+    font-family: "Merienda";
+    font-size: 14px;
+    text-align: right;
+    color: #000000;
+  }
+  .country {
+    margin-top: 6px;
+    font-family: "Merienda";
+    font-size: 14px;
+    text-align: right;
+    color: #000000;
+    display: block;
+    // display: none;
+  }
+  .price {
+    margin-top: 6px;
+    font-family: "Merienda-bold";
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+    color: #000000;
+  }
 }
