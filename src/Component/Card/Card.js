@@ -1,8 +1,11 @@
 import React, { Component } from "react";
+import { useNavigate } from "react-router";
 
 import "./Card.scss";
 
 const Card = ({ item }) => {
+
+  const navigate = useNavigate()
   //   function ref(item) {
   //     const top = item.rise === true;
   //     const clazz = top ? "block" : "";
@@ -10,7 +13,9 @@ const Card = ({ item }) => {
   //   //   }
   //     const solution  = item.rise === true;
   return (
-    <div className="item">
+    <div className="item" onClick={()=>{
+      navigate(`/ourCofee/${item.id}`)
+    }}>
       <div className="img">
         <img src={item.img} />
       </div>

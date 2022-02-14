@@ -1,4 +1,9 @@
 import { Component } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import "./App.scss";
 import MainPage from "./Main-page/Main-page";
 import CofeePage from "./Cofee-page/Cofee-page";
@@ -101,16 +106,6 @@ class App extends Component {
   onUpdateSearch = (term) => {
     this.setState({ term });
   };
-  // onUpdateCountry = (count) => {
-  //   this.setState(({ data }) => ({
-  //     data: data.map((item) => {
-  //       if (item.rise) {
-  //         return { item[country]: count };
-  //       }
-  //       return item;
-  //     }),
-  //   }));
-  // };
 
   filterPost = (items, filter) => {
     switch (filter) {
@@ -125,7 +120,7 @@ class App extends Component {
     }
   };
   itemSelect = (items) => {
-    return items.filter((item) => item.id === 2);
+    return items.filter((item) => item.id !== '');
   };
   onFilterSelect = (filter) => {
     this.setState({ filter });
@@ -136,19 +131,25 @@ class App extends Component {
     const itemSelect = this.itemSelect(data);
     return (
       <div className="App">
-        <MainPage
-          data={this. BestGoods}
-          // data={this.onUpdateCountry}
-        />
-        {/* <CofeePage
-          data={visibleData}
-          onUpdateSearch={this.onUpdateSearch}
-          term={term}
-          filter={filter}
-          onFilterSelect={this.onFilterSelect}
-        /> */}
-        {/* <ItemPage itemSelect={itemSelect} /> */}
-        {/* <GoodsPage data={data} /> */}
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<MainPage
+              data={this.BestGoods}
+            // data={this.onUpdateCountry}
+            />} />
+            <Route path="/ourCofee" element={<CofeePage
+              data={visibleData}
+              onUpdateSearch={this.onUpdateSearch}
+              term={term}
+              filter={filter}
+              onFilterSelect={this.onFilterSelect}
+            />} />
+            <Route path="/ourCofee/:item" element={<ItemPage itemSelect={itemSelect} />} />
+            <Route path="/forYour" element={<GoodsPage data={data} />} />
+          </Routes>
+        </BrowserRouter>
+
+
       </div>
     );
   }

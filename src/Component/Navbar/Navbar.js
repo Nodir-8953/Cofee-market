@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from '../../Images/Logo.svg';
 import './Navbar.scss'
 function Navbar() {
@@ -8,9 +9,9 @@ function Navbar() {
                 <a href="#"><img src={Logo} /></a>
             </div>
             <ul>
-                <li><a href="#">Coffee house</a></li>
-                <li><a href="#">Our coffee</a></li>
-                <li><a href="#">For your pleasure</a></li>
+                <li><Link to="/">Coffee house</Link></li>
+                <li><Link to="/ourCofee">Our coffee</Link></li>
+                <li><Link to="/forYour">For your pleasure</Link></li>
             </ul>
         </div>
     )
